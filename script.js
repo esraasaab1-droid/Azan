@@ -78,7 +78,11 @@ function renderCal() {
 
     </div>
 
-    <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center">
+    <div style="display:grid;grid-template-columns:repeat(7,minmax(10px,1fr));
+gap:8px;
+padding:10px;
+font-size:16px;
+min-width:40px;text-align:center">
     `;
 
     DAYS_AR.forEach((d, i) => {

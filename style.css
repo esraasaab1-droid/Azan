@@ -26,8 +26,8 @@ body.dark {
     width: 420px;
     max-width: 95vw;
     border-radius: 20px;
-    overflow: hidden;
-    border: 1px solid;
+    overflow:visible;
+   border: 1px solid;
     box-shadow: 0 8px 32px #0002;
 }
 
@@ -256,7 +256,6 @@ body.dark .az-next-prayer{
     font-size:13px;
     color:var(--az-muted);
 }
-   ```css id="b1z8kt"
 .next-box{
     margin-top:15px;
     padding:20px;
@@ -297,7 +296,6 @@ body.dark .next-box{
     font-size:16px;
     opacity:.9;
 }
-```
 
 
 .np-time{
