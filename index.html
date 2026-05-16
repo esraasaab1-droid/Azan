@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>مواقيت الصلاة · Prayer Times</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body class="light">
+
+    <div class="az-wrap">
+
+        <div class="az-topbar">
+
+            <div class="az-header-left">
+
+                <div class="az-icon-wrap">
+                    <i class="ti ti-sun" id="appIcon"></i>
+                </div>
+
+                <div>
+                    <bold class="az-title">Azan Prayer Time</bold>
+                </div>
+
+            </div>
+
+            <div class="az-toggle" onclick="toggleTheme()">
+
+                <i class="ti ti-sun" id="themeIcon"></i>
+
+                <span id="themeLabel">
+                    نهاري
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="az-body">
+
+            <div class="az-inputs">
+
+<div style="position:relative">
+  <input class="az-input" type="text" id="date" placeholder="DD-MM-YYYY" readonly onclick="toggleCal()" style="cursor:pointer;width:100%">
+  <div id="calDropdown" style="display:none;position:absolute;z-index:99;width:100%;background:var(--az-card);border-radius:12px;border:1px solid #e8dfc8;padding:12px;margin-top:4px"></div>
+</div>
+<div id="calDropdown" style="display:none;position:absolute;z-index:99;width:100%;
+  background:var(--az-card);border-radius:12px;border:1px solid var(--az-border);
+  padding:12px;margin-top:4px"></div>
+                <input class="az-input" type="text" id="city" placeholder="المدينة">
+
+                <input class="az-input" type="text" id="country" placeholder="رمز الدولة">
+
+                <button class="az-btn" id="fetchBtn" onclick="fetchApi()">
+
+                    عرض أوقات الصلاة
+
+                </button>
+
+            </div>
+
+            <div id="result"></div>
+
+        </div>
+
+    </div>
+<div id="result"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
